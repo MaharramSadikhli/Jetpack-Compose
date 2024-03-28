@@ -22,6 +22,7 @@ import com.imsosoft.composearticle.composearticle.ComposeArticle
 import com.imsosoft.composearticle.composearticle.components.DescriptionText
 import com.imsosoft.composearticle.composearticle.components.IntroText
 import com.imsosoft.composearticle.composearticle.components.TitleText
+import com.imsosoft.composearticle.taskmanager.TaskManager
 import com.imsosoft.composearticle.ui.theme.ComposeArticleTheme
 
 class MainActivity : ComponentActivity() {
@@ -31,6 +32,9 @@ class MainActivity : ComponentActivity() {
         setContent {
             ComposeArticleTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                    
+                    TaskManager(modifier = Modifier.padding(innerPadding))
+                    
                 }
             }
         }
