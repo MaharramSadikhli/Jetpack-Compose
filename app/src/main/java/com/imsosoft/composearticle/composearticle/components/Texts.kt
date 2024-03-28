@@ -1,4 +1,4 @@
-package com.imsosoft.composearticle.components
+package com.imsosoft.composearticle.composearticle.components
 
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Text
